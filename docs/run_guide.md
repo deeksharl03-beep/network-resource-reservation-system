@@ -1,4 +1,4 @@
-# Run guide (Ved: network and SDN)
+# Run guide (Deeksha: network and SDN)
 
 ## Start order (always)
 1. Ryu controller  2. Mininet  3. Reservation server  4. Client / monitor
