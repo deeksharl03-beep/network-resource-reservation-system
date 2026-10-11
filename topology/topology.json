@@ -1,0 +1,20 @@
+{
+  "hosts": {
+    "h1": {"ip": "10.0.0.1", "switch": "s1", "port": 1},
+    "h2": {"ip": "10.0.0.2", "switch": "s1", "port": 2},
+    "h3": {"ip": "10.0.0.3", "switch": "s4", "port": 1},
+    "h4": {"ip": "10.0.0.4", "switch": "s4", "port": 2}
+  },
+  "links": [
+    {"a": "s1", "a_port": 3, "b": "s2", "b_port": 1, "capacity_mbps": 100},
+    {"a": "s2", "a_port": 2, "b": "s4", "b_port": 3, "capacity_mbps": 100},
+    {"a": "s1", "a_port": 4, "b": "s3", "b_port": 1, "capacity_mbps": 50},
+    {"a": "s3", "a_port": 2, "b": "s4", "b_port": 4, "capacity_mbps": 50}
+  ],
+  "switch_dpid": {
+    "s1": 1,
+    "s2": 2,
+    "s3": 3,
+    "s4": 4
+  }
+}
